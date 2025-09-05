@@ -1,12 +1,14 @@
 *Taller 1
 *Ejercicio 2
+clear all
+
 ssc install coefplot
 ssc install estout
 
 * Fijar directorio de trabajo
-cd "C:\Users\Marlon Angulo\Desktop\Maestría Andes\Econometría Avanzada\Taller 1"
+use "https://github.com/9marlon9/Taller-1-EcAV/raw/refs/heads/main/colonial_trade.dta"
 
-use colonial_trade.dta
+
 
 *a) Generar variables LN(1+kt)
 * Generar variables escaladas 10^a * T_{i,j}
@@ -44,16 +46,6 @@ esttab model_1 model_2 model_3 model_4 model_5 model_6 model_7 model_8 model_9 m
     title("Sensibilidad del Coeficiente a Cambios de Escala") ///
     addnotes("Errores estándar entre paréntesis" "*** p<0.01, ** p<0.05, * p<0.1") ///
     label
-
-
-
-
-
-
-
-
-
-
 
 *c) Gráfica de coeficientes:
 
